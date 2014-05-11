@@ -1,0 +1,131 @@
+<!doctype html>
+
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name='description' content='This is a portfolio website for Loveson Joseph. This site is uses xhtml, javascript, and css. There are jquery implementations as well as life story about Loveson Joseph.'/>		<meta name="keywords" content="main about me ask me error Loveson Joseph heatworld1 html css"/>
+		<base href="index.php" />
+		<link rel="shortcut icon" href="img/siteIcon.ico" type="image/x-icon" />
+		<title>LJ | Welcome</title>
+		<link rel="stylesheet" href="css/foundation.css" />
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+		<link rel="stylesheet" href="css/siteCss.css" />
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>		
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+		<script src="js/vendor/modernizr.js"></script>
+		<script src="js/bg_color.js"></script>
+		<script src="js/foundation/foundation.js"></script>
+		<script src="js/foundation/foundation.topbar.js"></script>
+		<script>
+			$(document).ready(function() {
+				$(document).foundation();
+				$('.to-top').on('click', function(){
+					$("html, body").animate({ scrollTop: 0 }, "slow");
+				});
+				
+				$(window).on('hashchange', function(){
+					var pageName;
+					if(window.location.hash) {
+					  // Call Page
+						switch(window.location.hash){
+							case 'about': 
+							case 'downloads':
+							case 'projects':
+							case 'reviews':
+							case 'test':
+							case 'test2':
+							pageName = window.location.hash;
+							break;
+						
+							default :
+							pageName = 'main';
+							break;
+						}	
+					} else {
+					  // Default
+					  pageName = 'main';
+					}
+					
+					$.ajax({
+						type: 'POST',
+						url	: 'getPage.php',
+						data: {
+							handle 		: 'pageData',
+							pageTitle	: pageName
+						}
+					});
+				});
+				
+			});
+		</script>
+	</head>
+	
+	<body>
+	
+		<div class="contain-to-grid sticky">
+			<nav class="top-bar" data-topbar data-options="sticky_on: large">
+			  <ul class="title-area">
+				<li class="name">
+				  <h1><a href="#">My Site</a></h1>
+				</li>
+			  </ul>
+
+			  <section class="top-bar-section">
+				<!-- Right Nav Section -->
+				<ul class="right">
+				  <li ><a href="#">Sign In</a></li>
+				</ul>
+
+				<!-- Left Nav Section -->
+				<ul class="left">
+					<li><a href="#main">LJ</a></li>
+					<li><a href="#home">home</a></li>
+					<li><a href="#about">me</a></li>
+					<li><a href="#projects">projects</a></li>
+					<li><a href="#reviews">reviews</a></li>
+					<li><a href="#downloads">downloads</a></li>
+					<li><a href="#test">testtest</a></li>
+					<li><a href="#test2">test2</a></li>
+				</ul>
+			  </section>
+			</nav>
+		</div>
+		
+		<div class='row'>
+			<div class='large-12 columns'>
+				<div id='face' class="panel">
+					<img src='img/banner.jpg'>
+				</div>
+			</div>
+		</div>
+		
+		<div class='row midsection'>
+		<div id='diamond'>
+		LJ
+		</div>
+			<!-- CONTENT GOES HERE -->
+		</div>
+			
+		<div class='row'>
+			<div class='large-12 columns text-center'>
+			<div id='diamond'>
+		LJ
+		</div>
+				<footer>
+					<div id='feet' class="panel">
+					<button class='to-top'>top</button>
+						<p>LJSites &copy; 2011</p>
+						<hr/>
+						<div id='html5'><a href='#'>html valid</a></div>
+						<div id='css3'><a href='#'>css valid</a></div>
+						<p>(772).924.5948</p>
+						<p>ljdesign1@lovesonjoseph.com</p>
+						<a href='resume.pdf' class='resume'>RESUME</a>
+					</div>
+				</footer>
+			</div>
+		</div>
+			
+	</body>
+</html>

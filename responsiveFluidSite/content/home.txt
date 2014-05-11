@@ -1,0 +1,20 @@
+<div class='large-9 columns'>
+				<div id='chest' class="panel">
+					<p>Hey, my name is Loveson Joseph or better known as "LJ", and I have come to love web designing. I have created many different sites, and I want the world to see my work. This website has almost every concept that I have ever learned. Not only that but this site has a few extra treats for the public. This is my first personal website so please have a look around, and constructive criticism is always welcome.</p><img src="sig.jpg" alt="" class="introimg" />
+					<img src="staff_lj.jpg" alt="" class="introlj"/>	
+				</div>
+			</div>
+			<div class='large-3 columns'>
+				<div id='arm' class="panel">
+					<p>Lorem ipsum dolor sit amet, id eos qualisque moderatius. Ius debet iusto in, ea eirmod facilis postulant mei, an agam soluta tamquam his. Mea te dolore nonumy sanctus. Id cum persius iracundia, ea mutat reque mel, sed ne aperiam malorum laboramus. Appetere perfecto ea vis, audire pertinacia cu mei. Eros vide possim at mea, alii invenire pro ad, ad sea liber sanctus cotidieque.
+
+					Sed te lobortis mnesarchum. Cu modo labores suscipit eam, nec tation diceret ei, qui eligendi principes ex. Nec explicari maluisset temporibus id. Ut est vero molestiae. Illum vitae copiosae ad mei, ad quo quis equidem assentior, ne postulant partiendo nec.
+
+					Nusquam invenire sit cu, ea reque qualisque suscipiantur quo, at sumo molestiae evertitur vim. Ad impedit epicuri nec. Sed luptatum posidonium in, id sea quem tritani facilisis, ne his prima dolorum definiebas. Eos ea sumo unum definitiones, an laudem commune referrentur mea.
+
+					Sed ea labores imperdiet, esse ponderum eu his, an facilisis concludaturque vim. Unum dicant euismod his ex. Vis cu iisque omittam, quot admodum ea pri. An vivendum disputando pri. Vix fugit consequat ullamcorper ex, mei alia iudicabit an, vix aeque dictas regione no. Pro diam illum eu, an ancillae detracto his. Magna autem persequeris et per.
+
+					Ut mei bonorum atomorum mandamus, per ex congue everti explicari. Usu ex tempor quidam causae, ut hinc disputationi ius, eum quis augue admodum ei. Ius no quando labores, mea case quando contentiones at. An duo timeam democritum.
+					</p>
+				</div>
+			</div>

@@ -1,0 +1,53 @@
+.sticky{
+	opacity : 0.9;
+}
+body{
+	font-family: arial black;
+	
+}
+::selection {
+	color:white;
+	background:#900;
+}
+#nav{
+	font-family:Lucida Sans Unicode;
+	text-transform:capitalize;
+	text-align: center;
+}
+#nav span{
+	cursor:pointer;
+}
+#nav span:hover{
+	color:red;
+}
+#face{
+	margin-top:1em;
+}
+.panel{
+	box-shadow:.25em .25em 0em rgba(2,3,4,.7);
+}
+.contain-to-grid, img{
+	box-shadow:.25em .25em 0em rgba(2,3,4,.1);
+}
+a:hover{
+	border-right: #900 dotted .1em;
+}
+
+#diamond {
+	width: 0;
+	height: 0;
+	border: 15px solid transparent;
+	border-bottom-color: #900;
+	/*position: relative;
+	top: -25px;*/
+}
+#diamond:after {
+	content: '';
+	position: absolute;
+	left: -15px;
+	top: 15px;
+	width: 0;
+	height: 0;
+	border: 15px solid transparent;
+	border-top-color: #900;
+}

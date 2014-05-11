@@ -1,0 +1,11 @@
+<?php
+	function checkPhoneNumber($phoneData){
+		$filtedNumber = preg_replace('/(\W*)/', '', $phoneData);
+		
+		if(strlen($filtedNumber) < 2 || ctype_alpha($filtedNumber)){
+			return false;
+		}else{
+			return true;
+		}
+	}
+?>

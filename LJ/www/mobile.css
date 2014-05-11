@@ -1,0 +1,15 @@
+#slide, #login, #slide-runner, #footer, #navigation, #toppanel, #slider{
+	display:none;
+}
+
+#content{
+	width:400px;
+	margin-right:auto;
+	margin-left:auto;
+	min-height:100px;
+	padding:10px;
+}
+
+#login{
+	
+}

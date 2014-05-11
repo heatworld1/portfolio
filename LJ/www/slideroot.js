@@ -1,0 +1,1 @@
+	var _siteRoot='index.php',_root='index.php';

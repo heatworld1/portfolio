@@ -1,0 +1,89 @@
+<div class='large-9 columns'>
+				<div id='chest' class="panel"><h1>My Resources</h1>
+<p class="finaltitle">Everybody could use some useful links when in the process of designing and developing. So I have listed below, the essentials so that you can get that little extra help when coding. Click the box to go to the site.<br/><b>Note:</b>Click the boxes to download the files.</p>
+<br/>
+<img src="hr.png" alt="" class="hr" /> 
+<br/>
+<table id='resources'>
+			<tr>
+				<th class='rhead' colspan='4'>RESOURCES</th>
+			</tr>
+			<tr>
+					<td>
+						<div class='hover_block'>
+							<div>
+								<a href='http://browize.com/'>
+								<img src='resource/browzie.jpg' alt='' class='hoverimg2' /> 
+								<span class='rtitle'>Description:</span>The in-browser window resizer<br/></a>
+							</div>
+						</div>
+					</td>
+				
+					<td>
+						<div class='hover_block'>
+							<div>
+								<a href='http://www.bgpatterns.com/'>
+								<img src='resource/bg-patterns.jpg' alt='' class='hoverimg2' /> 
+								<span class='rtitle'>Description:</span>BgPatterns is a tiny web app for making background patterns in a few clicks<br/></a>
+							</div>
+						</div>
+					</td>
+				
+					<td>
+						<div class='hover_block'>
+							<div>
+								<a href='http://browsershots.org/'>
+								<img src='resource/browsershots.jpg' alt='' class='hoverimg2' /> 
+								<span class='rtitle'>Description:</span>Browsershots makes screenshots of your web design in different browsers<br/></a>
+							</div>
+						</div>
+					</td>
+				
+					</tr>
+					<tr>
+						<td>
+							<div class='hover_block'>
+								<div>
+									<a href='http://www.smushit.com/ysmush.it/'>
+									<img src='resource/smushit.jpg' alt='' class='hoverimg2' /> 
+									<span class='rtitle'>Description:</span>Yahoo file optimizer, simply upload your file and smush it!<br/></a>
+								</div>
+							</div>
+						</td>
+				
+					<td>
+						<div class='hover_block'>
+							<div>
+								<a href='http://jquery.com/'>
+								<img src='resource/jquery.jpg' alt='' class='hoverimg2' /> 
+								<span class='rtitle'>Description:</span>This site is full instructions on how to use jquery which a type of javascript library.<br/></a>
+							</div>
+						</div>
+					</td>
+				
+					<td>
+						<div class='hover_block'>
+							<div>
+								<a href='http://www.tizag.com/'>
+								<img src='resource/tizag.jpg' alt='' class='hoverimg2' /> 
+								<span class='rtitle'>Description:</span>This is random site that I came across and it has very good tutorials.<br/></a>
+							</div>
+						</div>
+					</td>
+				
+					</tr>
+					<tr>
+						<td>
+							<div class='hover_block'>
+								<div>
+									<a href='http://www.blindtextgenerator.com/lorem-ipsum'>
+									<img src='resource/randomtext.jpg' alt='' class='hoverimg2' /> 
+									<span class='rtitle'>Description:</span>Everybody knows about the dummy text that designers use, well here is a link to reproduce that.<br/></a>
+								</div>
+							</div>
+						</td>
+				</tr></table>
+				
+				</div>
+			</div>
+		
