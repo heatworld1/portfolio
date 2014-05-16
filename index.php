@@ -294,7 +294,88 @@
 			<!-- #### END NAVIGATION ##### -->	 
 			<div id="content">						
 				<div id="white">
-				<img class='test' src='images/loginlogo.ico' alt='' />
+				<!--<div id='askContent'> 
+					<p>I know there are question or comments your want to suggest so I decided to create this page. Please don't hesitate to say what you feel and constructive criticism is welcomed. I will do my best to get back with you.</p>
+				</div>
+				<form action="submitq.php" method="post" id="askingform">
+					<fieldset id="fieldset" class="fieldset">					
+						<span>
+						<input type="text" name="uname" id="uname" class="required" maxlength="28" value="Username" />
+						<input type="text" name="email" id="email" class="required email" maxlength="28" value="Email" />
+						</span>
+						
+						<span>
+						<label for="view">Public Question</label>
+						<input type="radio" name="view" value="public" checked="checked" />
+						</span>
+						
+						<span>
+						<label for="view">Private Question</label>
+						<input type="radio" name="view" value="private" />
+						</span>
+						
+						<span>
+						<label>Question:</label>
+						<span>
+						
+						<span>
+						<textarea cols="37" rows="7" name="question" id="question" class="required" value=""></textarea>
+						<input type="hidden" name="time" id="time" value="NOW()" />
+						</span>
+						
+						<span>
+						<img class="security" src="CaptchaSecurityImages.php?width=210&amp;height=40&amp;characters=7" />
+						</span>
+						
+						<span>
+						<input id="security_code" name="security_code" type="text" class="required" maxlength="7" value="Security Code" />
+						</span>
+						
+						<span>
+						<input type="submit" class="submit" value="Submit">
+						</span>
+					</fieldset>
+				</form>-->
+				<div class='resources'>
+					<div class='row'>
+						<p>RESOURCES</p>
+					</div>				
+					<div class='row'>
+						<div class='innerRow'>1</div>
+						<div class='innerRow'>2</div>
+						<div class='innerRow'>3</div>
+					</div>				
+					<div class='row'>
+						<div class='innerRow'>4</div>
+						<div class='innerRow'>5</div>
+						<div class='innerRow'>6</div>
+					</div>				
+					<div class='row'>
+						<div class='innerRow'>7</div>
+						<div class='innerRow'>8</div>
+						<div class='innerRow'>9</div>
+					</div>					
+				</div>
+				<div class='downloads'>
+					<div class='row'>
+						<p>DOWNLOADS</p>
+					</div>				
+					<div class='row'>
+						<div class='innerRow'>1</div>
+						<div class='innerRow'>2</div>
+						<div class='innerRow'>3</div>
+					</div>				
+					<div class='row'>
+						<div class='innerRow'>4</div>
+						<div class='innerRow'>5</div>
+						<div class='innerRow'>6</div>
+					</div>				
+					<div class='row'>
+						<div class='innerRow'>7</div>
+						<div class='innerRow'>8</div>
+						<div class='innerRow'>9</div>
+					</div>					
+				</div>
 					<?php 
 						//if (isset($_GET['p'])) {
 						if (1 ==3) {
@@ -315,11 +396,11 @@
 						   }
 						} else {
 						   //include("main.php");
-						   //include("main.php");
-						   include("askme.php");
-						   //include("downloads.php");
-						   //include("projects.php");
 						   //include("about.php");
+						   //include("askme.php");
+							//include("downloads.php");
+							include("resources.php");
+						   //include("projects.php");
 						} 
 					?>				
 				</div>
@@ -332,8 +413,7 @@
 			<p class='footer-text'>LJSites 2011</p>
 			<?php	
 				// Change to the name of the file 
-				$last_modified = filemtime("index.php"); 
-				echo  "<p class='footer-text'>Last modified " . date("F dS, Y", $last_modified).'</p>';
+				echo  "<p class='footer-text'>Last modified " . date("F d, Y", filemtime("index.php")).'</p>';
 			?>				
 
 			<div id='valid'>

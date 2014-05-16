@@ -6,6 +6,10 @@
      height: 100%;
      background: url(../images/light.png) #fff;
  }
+ @font-face{
+	font-family: openSans;
+	src: url(openSans.ttf);
+}
   #sky  {
      position: absolute;
      left: 0;
@@ -196,7 +200,7 @@
      margin-top: 7px;
      margin-bottom: 7px;
      padding: 33px 10px 10px;
-     font-family: Helvetica,  Comic Sans MS,  Trebuchet MS,  Calibri,  Verdana;
+     font-family: openSans, Helvetica, Comic Sans MS, Trebuchet MS, Calibri,  Verdana;
      font-size: .55em;
      font-style: normal;
      font-weight: 400;
@@ -432,7 +436,8 @@
      margin-left: auto;
      margin-right: auto;
      display: block;
-      text-align: left;
+     text-align: left;
+	 
      height: 175px;
  }
   #logfailform #form  {
@@ -446,6 +451,21 @@
      min-height: 215px;
      border: 7px solid #900;
  }
+  #askingform input[type=text] {
+	font-family: openSans;
+	margin-bottom:20px;
+	padding:5px;
+	width:95%;
+	color: #ccc;
+ }
+ #askingform textarea {
+	margin-bottom:20px;
+ }
+ #askingform{
+ width:50%;
+ font-size:1.5em;
+ }
+ 
   label p  {
      padding-bottom: 5px;
      padding-top: 5px;
@@ -571,7 +591,7 @@
      text-align: center;
      z-index: 11111111;
      cursor: default;
-     color: #a2a2a2;
+     color: #ddd;
      font-style: italic;
      font-size: 14px;
 	 padding-top: 5px;
@@ -613,6 +633,30 @@
      display: block;
      background: #900;
  }
+ .resources, .downloads{
+	background: pink;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align:center;
+ }
+ 
+ .resources .row, .downloads .row{
+	 margin-top:5px;
+	 margin-bottom:5px;
+	background: red;
+	clear:both;
+ }
+ 
+ .resources .row .innerRow, .downloads .row .innerRow{
+	width: 32%;
+	background: yellow;
+	height:150px;
+	float:left;
+	margin-bottom:7px;
+	margin-right:7px;
+ }
+ 
   #resources, #downloads  {
      margin-left: auto;
      margin-right: auto;
@@ -694,24 +738,33 @@
      inline display must not be set or will hide submit buttons in IE 5x mac */ width: auto;
      /* set width of form elements to auto-size,  otherwise watch for wrap on resize */ margin: 5px 0 0 10px;
      /* set margin on left of form elements rather than right of label aligns textarea better in IE */ }
-  .submit, .security  {
-     margin-left: 157px!important;
-     margin-top: 3px!important;
-     margin-bottom: -7px!important;
- }
   .security  {
-     margin-left: 150px!important;
+   margin-bottom: 20px;
  }
   .submit  {
-     float: left;
-     margin-top: 5px;
+	padding-top:20px;
+	padding-bottom:30px;
+	width:99%;
+	font-family: openSans;
+	background: white;
+	border: 1px solid #900;
+	color: #900;
+	font-weight: bold;
  }
+ 
+ .submit:hover{
+	color:white;
+	background: #900;
+	cursor:pointer;
+	
+}
   .cancel  {
      float: left;
      margin-top: 3px!important;
      margin-left: 3px!important;
  }
   .star  {
+	margin-top:10px;
      float: left;
      display: block;
  }
@@ -868,8 +921,13 @@
      z-index: -1000000;
      display: block;
  }
-  textarea:hover  {
-     border: none;
+ #askContent{
+	width:45%;
+	border: 1px solid #900;
+	padding:5px;
+	float:right;
+	font-size:1.5em;
+	text-indent: 20px;
  }
   #answered  {
      color: #fff;
@@ -1338,7 +1396,7 @@
      text-decoration: underline;
  }
   #aboutme a  {
-     color: #a2a2a2;
+     color: #900;
  }
   #aboutme p  {
      margin-bottom: 7px;
