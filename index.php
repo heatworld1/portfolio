@@ -81,6 +81,21 @@
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 			})();
 		</script>
+
+	 
+		<link href="css/jquery.fs.shifter.css" rel="stylesheet" type="text/css" media="all" />
+		<script src="js/jquery.fs.shifter.js"></script>
+		<style>
+			.shifter .shifter-navigation a { color: #666; display: block; font-size: 18px; margin: 0 0 15px; }
+		</style>
+		
+		<script type="text/javascript" >
+		$(document).ready(function() {
+				$.shifter({
+					maxWidth: Infinity
+				});
+			});
+		</script>
 		
 		<!--  ########## END JS Files ##########-->	
 	</head>
@@ -91,8 +106,19 @@
 		ob_implicit_flush(0);
 	?>
 	
-	<body>
-
+	<body class='shifter'>
+	
+		<!--  ########## START HIDDEN LOGIN ##########-->	
+		<nav class="shifter-navigation">
+			<a href="#1">Link One</a>
+			<a href="#2">Link Two</a>
+			<a href="#3">Link Three</a>
+			<a href="#4">Link Four</a>
+			<a href="#5">Link Five</a>
+		</nav>
+		<!--  ########## END HIDDEN LOGIN ##########-->	
+		
+		
 		<!--  ########## START LOGIN ##########-->	
 		<div id='toppanel'>
 			<!-- login -->	
@@ -114,11 +140,12 @@
 				</div>
 			</div> 
 			<!-- /login -->	
-			<span id='toggle' class='login'>Login</span>
+			<span id='toggle' class='login shifter-handle'>Login</span>
+			<span class='shifter-handle'>MENU</span>
 		</div> 
 		<!--  ########## END LOGIN ##########-->	
 		<!--  ########## START WRAPPER ##########-->	
-		<div id="wrapped" class="wrapped" >	
+		<div id="wrapped" class="wrapped shifter-page">	
 			<!--  ########## START SLIDER ##########-->	
 			<div id="slider"> 
 				<div class="boxplus">
@@ -294,7 +321,7 @@
 			<!-- #### END NAVIGATION ##### -->	 
 			<div id="content">						
 				<div id="white">
-				<!--<div id='askContent'> 
+				<div id='askContent'> 
 					<p>I know there are question or comments your want to suggest so I decided to create this page. Please don't hesitate to say what you feel and constructive criticism is welcomed. I will do my best to get back with you.</p>
 				</div>
 				<form action="submitq.php" method="post" id="askingform">
@@ -335,28 +362,63 @@
 						<input type="submit" class="submit" value="Submit">
 						</span>
 					</fieldset>
-				</form>-->
+				</form>
 				<div class='resources'>
-					<div class='row'>
+					<div class='resource-head'>
 						<p>RESOURCES</p>
-					</div>				
-					<div class='row'>
-						<div class='innerRow'>1</div>
-						<div class='innerRow'>2</div>
-						<div class='innerRow'>3</div>
-					</div>				
-					<div class='row'>
-						<div class='innerRow'>4</div>
-						<div class='innerRow'>5</div>
-						<div class='innerRow'>6</div>
-					</div>				
-					<div class='row'>
-						<div class='innerRow'>7</div>
-						<div class='innerRow'>8</div>
-						<div class='innerRow'>9</div>
-					</div>					
+					</div>
+					<?php						
+						$files = glob("images/resourceImages/*.*");
+						
+						echo '<div class="row">';
+						$nextRow = 0;
+						for($j = 0 ; $j < count($files); $j++){
+							if($nextRow !=3){				
+								echo "<div class='innerRow'>";
+								echo "<img alt='' height='110px' width='150px' src='$files[$j]' />";
+								echo "</div>";
+								$nextRow++;
+							} else {
+								echo '</div><div class="row">';
+								echo "<div class='innerRow'>";
+								echo "<img alt='' height='110px' width='150px' src='$files[$j]' />";
+								echo "</div>";
+								$nextRow = 1;
+							}
+						}
+						echo '</div>';
+					?>					
+					 				
 				</div>
 				<div class='downloads'>
+					<div class='downloads-head'>
+						<p>DOWNLOADS</p>
+					</div>
+					<?php						
+						$files = glob("images/downloadImages/*.*");
+						
+						echo '<div class="row">';
+						$nextRow = 0;
+						for($j = 0 ; $j < count($files); $j++){
+							if($nextRow !=3){				
+								echo "<div class='innerRow'>";
+								echo "<img alt='' height='110px' width='150px' src='$files[$j]' />";
+								echo "</div>";
+								$nextRow++;
+							} else {
+								echo '</div><div class="row">';
+								echo "<div class='innerRow'>";
+								echo "<img alt='' height='110px' width='150px' src='$files[$j]' />";
+								echo "</div>";
+								$nextRow = 1;
+							}
+						}
+						echo '</div>';
+					?>					
+					 				
+				</div>
+				
+				<!--<div class='downloads'>
 					<div class='row'>
 						<p>DOWNLOADS</p>
 					</div>				
@@ -375,7 +437,7 @@
 						<div class='innerRow'>8</div>
 						<div class='innerRow'>9</div>
 					</div>					
-				</div>
+				</div>-->
 					<?php 
 						//if (isset($_GET['p'])) {
 						if (1 ==3) {
@@ -399,7 +461,7 @@
 						   //include("about.php");
 						   //include("askme.php");
 							//include("downloads.php");
-							include("resources.php");
+							//include("resources.php");
 						   //include("projects.php");
 						} 
 					?>				

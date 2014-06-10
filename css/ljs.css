@@ -290,7 +290,7 @@
      width: 100%;
      min-height: 100%;
      position: relative;
-     background: none;
+     background: #eee;
  }
   .clearfooter  {
      height: 260px;
@@ -430,15 +430,8 @@
      background: #545454;
  }
   #form  {
-     width: 200px;
+     
      padding: 10px;
-     margin-top: 10px;
-     margin-left: auto;
-     margin-right: auto;
-     display: block;
-     text-align: left;
-	 
-     height: 175px;
  }
   #logfailform #form  {
      width: 200px;
@@ -633,9 +626,27 @@
      display: block;
      background: #900;
  }
+ 
+ .resource-head{
+ background: #900;
+ color:white;
+ font-size: 3em;
+ }
+ #outerform{
+ background: white;
+ border: 1px solid #eee;
+z-index: 500;
+display: block;
+position: relative;
+ 
+ }
+ 
+ .downloads-head{
+ color:#900;
+ font-size: 3em;
+ }
  .resources, .downloads{
-	background: pink;
-	width: 80%;
+	width: 78%;
 	margin-left: auto;
 	margin-right: auto;
 	text-align:center;
@@ -643,18 +654,17 @@
  
  .resources .row, .downloads .row{
 	 margin-top:5px;
-	 margin-bottom:5px;
-	background: red;
+	 margin-bottom: 18px;
 	clear:both;
+	height: 110px;
  }
  
  .resources .row .innerRow, .downloads .row .innerRow{
-	width: 32%;
-	background: yellow;
-	height:150px;
+	width: 30%;
+	height:110px;
+	border: 1px solid #eee;
 	float:left;
-	margin-bottom:7px;
-	margin-right:7px;
+	margin-right: 15px;
  }
  
   #resources, #downloads  {

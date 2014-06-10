@@ -1,5 +1,6 @@
 $(function() {
 	$('.login').on('click', function(){
+		alert('login');
 		$("#outerform").dialog();
 	});
 	
